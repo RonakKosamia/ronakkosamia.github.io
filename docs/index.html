@@ -41,37 +41,35 @@
 
     </div>
   </section>
-
+  
   <!-- Experience Section -->
-  <section class="section experience" data-aos="fade-up">
-    <div class="card" id="experience">
-      <h2>Professional Experience</h2>
-      <div class="logo-row">
-        <img id="gm" src="gm.png" alt="GM" onclick="showJob('gm')" />
-        <img id="capone" src="capone.png" alt="Capital One" onclick="showJob('capone')" />
-        <img id="medtronic" src="medtronic.png" alt="Medtronic" onclick="showJob('medtronic')" />
-        <img id="cariad" src="cariad.png" alt="Cariad USA" onclick="showJob('cariad')" />
-        <img id="wmata" src="wmata.png" alt="WMATA" onclick="showJob('wmata')" />
-        <img id="foodcrave" src="foodcrave.png" alt="FoodCrave" onclick="showJob('foodcrave')" />
+ <section class="section split-panel" id="skills-experience" data-aos="fade-up">
+    <div class="split-container">
+      <div class="split-left card">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><b>Languages:</b> Kotlin, Java, Rust, Python, Swift, TypeScript</li>
+          <li><b>Mobile:</b> Jetpack Compose, KMP, SwiftUI, Flutter, BLE, ARKit</li>
+          <li><b>Cloud & DevOps:</b> AWS, Firebase, GCP, Terraform, Jenkins</li>
+          <li><b>Arch:</b> GraphQL, REST, MVVM, Clean Arch, DI, OTA</li>
+          <li><b>Observability:</b> Prometheus, Grafana, Crashlytics, OpenTelemetry</li>
+          <li><b>Security:</b> OAuth 2.0, OpenID Connect, HIPAA, JWT</li>
+        </ul>
       </div>
-      <p id="job-text" class="job-desc">
-        At General Motors, I led the MyBrand infotainment app across 20+ vehicle platforms, including EVs, enabling OTA diagnostics, dynamic theming, and integrated OnStar services. I architected and delivered Kotlin/Rust SDKs, real-time data sync via Firebase & Kafka, and GraphQL APIs for vehicle health, subscriptions, EV routing, and navigation. I also developed the Super Cruise Navigation App, using HERE Maps and charger telemetry streams. Led team of 5+ engineers, standardized security (OAuth 2.0, JWT), introduced Prometheus/Grafana observability, and migrated RxJava to Kotlin Coroutines + Flow for performance and lifecycle-aware state handling.
-      </p>
-    </div>
-  </section>
-  <!-- Skills Section -->
-  <section class="section skills" data-aos="fade-up">
-    <div class="card">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><b>Languages:</b> Kotlin, Java, Python, Rust, Swift, JavaScript, TypeScript</li>
-        <li><b>Mobile Development:</b> Jetpack Compose, KMP, Android SDK, SwiftUI, Flutter, React Native</li>
-        <li><b>Cloud & DevOps:</b> AWS, GCP, Firebase, Kubernetes, Terraform, Jenkins, GitHub Actions</li>
-        <li><b>Architecture:</b> MVVM, Clean Arch, GraphQL APIs, REST, DI (Koin, Dagger, Hilt)</li>
-        <li><b>CI/CD & Testing:</b> Fastlane, Gradle, Artifactory, Robolectric, Espresso, Firebase Test Lab</li>
-        <li><b>Observability:</b> Prometheus, Grafana, OpenTelemetry, Crashlytics</li>
-        <li><b>Security:</b> OAuth 2.0, JWT, HIPAA compliance, OpenID Connect</li>
-      </ul>
+      <div class="split-right card">
+        <h2>Professional Experience</h2>
+        <div class="logo-row">
+          <img id="gm" src="gm.png" onclick="showJob('gm')" />
+          <img id="capone" src="capone.png" onclick="showJob('capone')" />
+          <img id="medtronic" src="medtronic.png" onclick="showJob('medtronic')" />
+          <img id="cariad" src="cariad.png" onclick="showJob('cariad')" />
+          <img id="wmata" src="wmata.png" onclick="showJob('wmata')" />
+          <img id="foodcrave" src="foodcrave.png" onclick="showJob('foodcrave')" />
+        </div>
+        <p id="job-text" class="job-desc">
+          At General Motors, I led the MyBrand infotainment app across 20+ vehicle platforms, including EVs, enabling OTA diagnostics, dynamic theming, and integrated OnStar services. I architected and delivered Kotlin/Rust SDKs, real-time data sync via Firebase & Kafka, and GraphQL APIs for vehicle health, subscriptions, EV routing, and navigation. I also developed the Super Cruise Navigation App, using HERE Maps and charger telemetry streams. Led team of 5+ engineers, standardized security (OAuth 2.0, JWT), introduced Prometheus/Grafana observability, and migrated RxJava to Kotlin Coroutines + Flow for performance and lifecycle-aware state handling.
+        </p>
+      </div>
     </div>
   </section>
   
