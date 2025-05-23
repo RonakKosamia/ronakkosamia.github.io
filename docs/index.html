@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ronak Kosamia | Principal Software Engineer</title>
+  <meta name="description" content="Principal Engineer | Android • SDV • KMP • EB1-A Profile" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 </head>
@@ -20,48 +21,59 @@
 </header>
 
 <main>
-  <section class="section card about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p class="justified">
-      I’m a Principal Software Engineer with 12+ years of experience delivering advanced automotive software, mobile-cloud platforms, and scalable SDKs. My focus spans Jetpack Compose, SDV architecture, OTA deployment, and KMP frameworks across brands like GM, Volkswagen, and Capital One.
-    </p>
-  </section>
-
-  <section class="section card experience" data-aos="fade-up">
-    <h2>Professional Experience</h2>
-    <div class="logo-row">
-      <img src="gm.png" class="job-logo active" data-job="gm" alt="GM">
-      <img src="capone.png" class="job-logo" data-job="capone" alt="Capital One">
-      <img src="wmata.png" class="job-logo" data-job="wmata" alt="WMATA">
-      <img src="foodcrave.png" class="job-logo" data-job="foodcrave" alt="FoodCrave">
-    </div>
-    <div id="job-desc" class="justified">
-      <h3>General Motors</h3>
-      <p>Led MyBrand architecture for 20+ vehicle platforms, introduced KMP-based SDKs, integrated Firebase + GraphQL, and scaled OTA deployment across flagship GM models.</p>
+  <!-- About Me -->
+  <section class="section about" data-aos="fade-up">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I’m a Principal Software Engineer with 12+ years of experience delivering advanced automotive software, mobile-cloud platforms, and scalable SDKs. 
+        My focus spans Jetpack Compose, SDV architecture, OTA deployment, and KMP frameworks across brands like GM, Volkswagen, and Capital One.
+      </p>
     </div>
   </section>
 
-  <section class="section card split-section" data-aos="fade-up">
-    <div class="column left">
-      <h2>Blog & Publications</h2>
-      <p><a href="https://medium.com/@kosamiar" target="_blank">Blog on Medium</a></p>
-      <p><a href="https://doi.org/10.55041/ISJEM02213" target="_blank">ISJEM Research Paper</a></p>
-      <p><a href="https://www.researchgate.net/profile/Ronak-Kosamia-2" target="_blank">ResearchGate</a></p>
+  <!-- Experience Section -->
+  <section class="section experience" data-aos="fade-up">
+    <div class="card">
+      <h2>Professional Experience</h2>
+      <div class="logo-row">
+        <img id="gm" src="gm.png" alt="GM" onclick="showJob('gm')" />
+        <img id="capone" src="capone.png" alt="Capital One" onclick="showJob('capone')" />
+        <img id="wmata" src="wmata.png" alt="WMATA" onclick="showJob('wmata')" />
+        <img id="foodcrave" src="foodcrave.png" alt="FoodCrave" onclick="showJob('foodcrave')" />
+      </div>
+      <p id="job-text" class="job-desc">
+        Led MyBrand architecture for 20+ vehicle platforms, introduced KMP-based SDKs, integrated Firebase + GraphQL, and scaled OTA deployment across flagship GM models.
+      </p>
     </div>
-    <div class="column right">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Azure Solutions Architect Expert</li>
-        <li>Certified SAFe® 5 Practitioner</li>
-        <li>Six Sigma Black Belt</li>
-      </ul>
-      <h2 id="contact">Contact Me</h2>
-      <form action="https://formsubmit.io/send/kosamiar@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+  </section>
+
+  <!-- Blog + Contact Split -->
+  <section class="section split-panel" data-aos="fade-up">
+    <div class="split-container">
+      <div class="split-left card">
+        <h3>Blog & Publications</h3>
+        <ul>
+          <li><a href="https://medium.com/@kosamiar">Blog on Medium</a></li>
+          <li><a href="https://doi.org/10.55041/ISJEM02213">ISJEM Research Paper</a></li>
+          <li><a href="https://www.researchgate.net/profile/Ronak-Kosamia-2">ResearchGate</a></li>
+        </ul>
+      </div>
+      <div class="split-right card" id="contact">
+        <h3>Certifications</h3>
+        <ul>
+          <li>Azure Solutions Architect Expert</li>
+          <li>Certified SAFe® 5 Practitioner</li>
+          <li>Six Sigma Black Belt</li>
+        </ul>
+        <h3>Contact Me</h3>
+        <form action="https://formsubmit.io/send/kosamiar@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </section>
 </main>
