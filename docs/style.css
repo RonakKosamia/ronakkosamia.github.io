@@ -142,3 +142,13 @@ nav a:focus {
   outline-offset: 2px;
 }
 
+.skills { background-color: #e0f2fe; }
+.education { background-color: #fdf4ff; }
+
+.skills ul, .education ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+
