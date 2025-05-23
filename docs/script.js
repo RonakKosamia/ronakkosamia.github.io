@@ -1,4 +1,3 @@
-
 AOS.init({ duration: 800, once: true });
 
 particlesJS('particles-js', {
@@ -19,12 +18,23 @@ particlesJS('particles-js', {
   }
 });
 
-function showJob(job) {
-  const textMap = {
-    gm: "At General Motors, I led the MyBrand infotainment app across 20+ vehicles, built Compose UIs, migrated legacy Java to Kotlin, and delivered OTA-ready SDKs.",
-    capone: "At Capital One, I led Android Compose modernization for the AtWork App suite, scaled Jenkins pipelines, and built secure GraphQL-based purchase flows.",
-    wmata: "At WMATA, I developed cross-platform transit tools, integrated GIS with Ionic mobile apps, and enabled live bus stop editing across internal fleets.",
-    foodcrave: "At FoodCrave, I engineered the food delivery backend, React Native mobile app, real-time updates, and secure payment flows with optimized performance."
+function showJob(jobId) {
+  const jobText = {
+    gm: "Led MyBrand architecture for 20+ vehicle platforms, introduced KMP-based SDKs, integrated Firebase + GraphQL, and scaled OTA deployment across flagship GM models.",
+    capone: "Modernized Capital One's AtWork App with Compose, CI/CD, GraphQL, and enterprise auth; improved security and developer velocity.",
+    wmata: "Developed GIS-based hybrid tools for WMATA using Ionic, Angular, and real-time map APIs for internal transit team operations.",
+    foodcrave: "Led FoodNearU mobile app with real-time delivery tracking, React Native UI, and integrated Stripe payments + location SDKs."
   };
-  document.getElementById('job-text').innerText = textMap[job] || '';
+
+  document.getElementById('job-text').innerText = jobText[jobId];
+
+  // Highlight selected logo
+  const logos = document.querySelectorAll('.logo-row img');
+  logos.forEach(img => img.classList.remove('selected'));
+  document.getElementById(jobId).classList.add('selected');
 }
+
+// Default selection
+window.onload = () => {
+  showJob('gm');
+};
