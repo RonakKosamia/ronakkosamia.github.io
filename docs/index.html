@@ -12,56 +12,56 @@
 
 <header>
   <h1>Ronak Kosamia</h1>
-  <p>Principal Software Engineer • Android | SDV | EB1-A</p>
+  <p>Principal Software Engineer • Android | SDV | EB1-A Applicant</p>
+  <nav>
+    <a href="#contact">Contact</a>
+    <a href="#" id="toggle-theme">🌓</a>
+  </nav>
 </header>
 
 <main>
-  <section class="section about" data-aos="fade-up">
+  <section class="section card about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>
-      I’m a Principal Software Engineer with 12+ years of experience building secure, scalable, and intelligent mobile systems across automotive, enterprise, and IoT ecosystems.
-      Currently at Cariad USA (Volkswagen Group), I lead mobile platform modernization for Audi, VW, and Porsche. Previously at Capital One and GM, I led architecture for workforce and vehicle-connected applications.
+    <p class="justified">
+      I’m a Principal Software Engineer with 12+ years of experience delivering advanced automotive software, mobile-cloud platforms, and scalable SDKs. My focus spans Jetpack Compose, SDV architecture, OTA deployment, and KMP frameworks across brands like GM, Volkswagen, and Capital One.
     </p>
   </section>
 
-  <section class="section experience" data-aos="fade-up">
-    <h2>Experience</h2>
+  <section class="section card experience" data-aos="fade-up">
+    <h2>Professional Experience</h2>
     <div class="logo-row">
-      <img src="gm.png" alt="GM" onclick="showJob('gm')" />
-      <img src="capone.png" alt="Capital One" onclick="showJob('capone')" />
-      <img src="wmata.png" alt="WMATA" onclick="showJob('wmata')" />
-      <img src="foodcrave.png" alt="FoodCrave" onclick="showJob('foodcrave')" />
+      <img src="gm.png" class="job-logo active" data-job="gm" alt="GM">
+      <img src="capone.png" class="job-logo" data-job="capone" alt="Capital One">
+      <img src="wmata.png" class="job-logo" data-job="wmata" alt="WMATA">
+      <img src="foodcrave.png" class="job-logo" data-job="foodcrave" alt="FoodCrave">
     </div>
-    <div id="job-description" class="card job-desc">
-      <p id="job-text">
-        At General Motors, I led the MyBrand infotainment app across 20+ vehicles, built Compose UIs, migrated legacy Java to Kotlin, and delivered OTA-ready SDKs for climate, navigation, and e-commerce.
-      </p>
+    <div id="job-desc" class="justified">
+      <h3>General Motors</h3>
+      <p>Led MyBrand architecture for 20+ vehicle platforms, introduced KMP-based SDKs, integrated Firebase + GraphQL, and scaled OTA deployment across flagship GM models.</p>
     </div>
   </section>
 
-  <section class="section split-panel" data-aos="fade-up">
-    <div class="split-container">
-      <div class="split-left card">
-        <h3>Blog & Publications</h3>
-        <ul>
-          <li><a href="https://medium.com/@kosamiar">Read my blog →</a></li>
-          <li><a href="https://doi.org/10.55041/ISJEM02213">Research Paper – ISJEM (2025)</a></li>
-          <li><a href="https://www.amazon.com/dp/B0DZ7ZJ9BM">Book on Amazon</a></li>
-        </ul>
-      </div>
-      <div class="split-right card">
-        <h3>Certifications & Contact</h3>
-        <ul>
-          <li>Azure Solutions Architect</li>
-          <li>Certified SAFe® 5 Practitioner</li>
-        </ul>
-        <form action="https://formsubmit.io/send/kosamiar@gmail.com" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
+  <section class="section card split-section" data-aos="fade-up">
+    <div class="column left">
+      <h2>Blog & Publications</h2>
+      <p><a href="https://medium.com/@kosamiar" target="_blank">Blog on Medium</a></p>
+      <p><a href="https://doi.org/10.55041/ISJEM02213" target="_blank">ISJEM Research Paper</a></p>
+      <p><a href="https://www.researchgate.net/profile/Ronak-Kosamia-2" target="_blank">ResearchGate</a></p>
+    </div>
+    <div class="column right">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Azure Solutions Architect Expert</li>
+        <li>Certified SAFe® 5 Practitioner</li>
+        <li>Six Sigma Black Belt</li>
+      </ul>
+      <h2 id="contact">Contact Me</h2>
+      <form action="https://formsubmit.io/send/kosamiar@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 </main>
