@@ -178,6 +178,25 @@ nav a:focus {
   text-decoration: underline;
 }
 
+.headline {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 1em auto 0;
+}
+
+.headline span {
+  display: block;
+  color: #f8fafc;
+  font-weight: 400;
+}
+
+.headline strong {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
 
 
 
