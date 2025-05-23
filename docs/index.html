@@ -4,152 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ronak Kosamia | Principal Software Engineer</title>
-  <meta name="description" content="| Android | SDV | Cloud |" />
   <link href="style.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      margin: 0;
-      background: #ffffff;
-      color: #111;
-      scroll-behavior: smooth;
-    }
-    header, footer {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 1em;
-    }
-    nav a {
-      margin: 0 0.7em;
-      text-decoration: none;
-      color: #007acc;
-    }
-    main {
-      max-width: 960px;
-      margin: auto;
-      padding: 2em 1em;
-    }
-    h2 {
-      color: #003366;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 4px;
-      margin-top: 2em;
-    }
-    .section {
-      margin-bottom: 3em;
-    }
-    .card {
-      background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      padding: 1.5em;
-      border-radius: 6px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-    }
-    input, textarea {
-      padding: 0.7em;
-      font-size: 1em;
-      width: 100%;
-      max-width: 600px;
-    }
-    button {
-      padding: 0.6em 1.2em;
-      background: #007acc;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid #ccc;
-    }
-    .resume-section {
-      text-align: center;
-    }
-    .resume-button {
-      margin-top: 0.8em;
-      display: inline-block;
-      padding: 0.6em 1.2em;
-      background: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-  </style>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+<div id="particles-js"></div>
 
 <header>
   <h1>Ronak Kosamia</h1>
-  <p>Principal Software Engineer — Android | SDV | Cloud-Native | EB1-A Applicant</p>
+  <p>Principal Software Engineer • Android | SDV | Cloud </p>
   <nav>
     <a href="#blog">Blog</a>
     <a href="#publications">Publications</a>
     <a href="#certs">Certifications</a>
     <a href="#contact">Contact</a>
+    <a href="#" id="toggle-theme">🌓</a>
   </nav>
 </header>
 
 <main>
-  <div class="section card">
+  <section class="section card" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>
-      I’m a Principal Engineer specializing in building high-performance automotive apps and cloud-integrated mobile systems.
-      Currently at Cariad USA (Volkswagen Group), previously at Capital One and General Motors.
-    </p>
-  </div>
+    <p>I specialize in high-performance automotive applications, KMP SDKs, and cloud-mobile architecture. I lead engineering at Cariad USA and previously scaled mobile at Capital One and GM.</p>
+  </section>
 
-  <div class="section card">
+  <section class="section card" data-aos="fade-up">
     <h2>Skills & Stack</h2>
     <ul>
-      <li><b>Languages:</b> Kotlin, Java, Rust, C++, Swift, Python</li>
-      <li><b>Mobile:</b> Jetpack Compose, KMP, Flutter, JNI, AIDL</li>
-      <li><b>Cloud:</b> AWS, Firebase, GCP, Kubernetes, Terraform</li>
-      <li><b>Tooling:</b> Jenkins, GitHub Actions, Prometheus, Grafana</li>
+      <li><b>Languages:</b> Kotlin, Java, Rust, Swift, Python</li>
+      <li><b>Mobile:</b> Jetpack Compose, KMP, JNI, AIDL</li>
+      <li><b>Cloud:</b> AWS, Firebase, GCP, Kubernetes</li>
+      <li><b>Tools:</b> Jenkins, Prometheus, Grafana, Terraform</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section card">
+  <section class="section card" data-aos="fade-up">
     <h2>Experience</h2>
-    <p><b>Capital One</b> – Principal Software Engineer (2024–Present)</p>
-    <p><b>General Motors</b> – Principal Engineer + Android Lead (2017–2024)</p>
-    <p><b>WMATA + FoodCrave</b> – Full-stack mobile development (2014–2017)</p>
-  </div>
+    <p><b>Capital One</b>: Led AtWork mobile platform with CI/CD & Compose</p>
+    <p><b>GM</b>: Built MyBrand, migrated legacy stacks, led SDK architecture</p>
+    <p><b>WMATA/FoodCrave</b>: Transit and food delivery mobile apps</p>
+  </section>
 
-<!--   <div class="section card resume-section">
+<!--   <section class="section card resume-section" data-aos="fade-up">
     <h2>View My Resume</h2>
     <iframe src="resume.pdf"></iframe>
     <a class="resume-button" href="resume.pdf" download>Download Resume</a>
-  </div> -->
-
-  <div id="blog" class="section card">
+  </section>
+ -->
+  <section id="blog" class="section card" data-aos="fade-up">
     <h2>Blog</h2>
-    <p><a href="https://medium.com/@kosamiar" target="_blank">View blog on Medium →</a></p>
-  </div>
+    <p><a href="https://medium.com/@kosamiar" target="_blank">Read my blog on Medium →</a></p>
+  </section>
 
-  <div id="publications" class="section card">
+  <section id="publications" class="section card" data-aos="fade-up">
     <h2>Publications & Research</h2>
     <ul>
       <li><a href="https://doi.org/10.55041/ISJEM02213" target="_blank">ISJEM 2025 Research Paper</a></li>
       <li><a href="https://www.researchgate.net/profile/Ronak-Kosamia-2" target="_blank">ResearchGate Profile</a></li>
       <li><a href="https://www.amazon.com/dp/B0DZ7ZJ9BM" target="_blank">Book on Amazon</a></li>
     </ul>
-  </div>
+  </section>
 
-  <div id="certs" class="section card">
+  <section id="certs" class="section card" data-aos="fade-up">
     <h2>Certifications</h2>
     <ul>
-      <li>Microsoft Certified: Azure Solutions Architect</li>
-      <li>Certified SAFe® 5 Practitioner</li>
-      <li>Design for Six Sigma Black Belt</li>
+      <li>Azure Solutions Architect</li>
+      <li>SAFe® 5 Practitioner</li>
+      <li>Six Sigma Black Belt</li>
     </ul>
-  </div>
+  </section>
 
-  <div id="contact" class="section card">
+  <section id="contact" class="section card" data-aos="fade-up">
     <h2>Contact Me</h2>
     <form action="https://formsubmit.io/send/kosamiar@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -157,12 +82,15 @@
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
-  </div>
+  </section>
 </main>
 
 <footer>
   <p>© 2025 Ronak Kosamia • Hosted on GitHub Pages</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
