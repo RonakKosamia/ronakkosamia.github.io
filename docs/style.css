@@ -13,6 +13,10 @@ body {
   height: 100%;
   z-index: 0;
 }
+header, nav, main, footer {
+  position: relative;
+  z-index: 10; /* ensures content sit above particles */
+}
 header, footer {
   background: #0f172a;
   color: #f8fafc;
