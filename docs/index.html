@@ -79,9 +79,14 @@
       <div class="split-right card" id="contact">
         <h3>Contact Me</h3>
        <form action="https://formspree.io/f/mpwdeood" method="POST">
+         
           <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" required>
-          <textarea name="message" required></textarea>
+         <label>Your email:
+           <input type="email" name="email" placeholder="Email" required>
+         </label>
+         <label>Your message:
+           <textarea name="message" placeholder="Message" required></textarea>
+         </label>
           <button type="submit">Send</button>
         </form>
       </div>
