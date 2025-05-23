@@ -1,11 +1,9 @@
-
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: #0f172a;
-  color: #f1f5f9;
+  color: #f8fafc;
   scroll-behavior: smooth;
-  z-index: 1;
 }
 #particles-js {
   position: fixed;
@@ -17,12 +15,12 @@ header, footer {
   background: #000;
   padding: 1.5em;
   text-align: center;
-  position: relative;
   z-index: 2;
+  position: relative;
 }
 nav a {
   margin: 0 0.7em;
-  color: #f1f5f9;
+  color: #f8fafc;
   text-decoration: none;
   font-weight: bold;
 }
@@ -37,14 +35,17 @@ main {
 .about { background-color: #111827; }
 .experience { background-color: #1f2937; }
 .split-panel { background-color: #0f172a; }
+
 .card {
   max-width: 960px;
   margin: auto;
+  padding: 2em;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   text-align: left;
 }
-.card p, .card ul, .card form {
-  text-align: justify;
-}
+
 .logo-row {
   display: flex;
   justify-content: center;
@@ -52,15 +53,22 @@ main {
   margin: 2em 0;
 }
 .logo-row img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   cursor: pointer;
-  transition: transform 0.2s;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  transition: transform 0.2s, border-color 0.3s;
 }
 .logo-row img:hover {
   transform: scale(1.1);
 }
+.logo-row img.selected {
+  border-color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
 .split-container {
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +82,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  max-width: 100%;
 }
 input, textarea {
   padding: 0.8em;
