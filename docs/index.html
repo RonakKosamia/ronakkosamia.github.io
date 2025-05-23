@@ -1,218 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-        content="Ronak Kosamia – Principal Software Engineer specializing in SDV, Android, KMP, and cloud-native automotive systems." />
   <title>Ronak Kosamia | Principal Software Engineer</title>
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      background: #ffffff;
-      color: #111;
-    }
-    header, footer {
-      background-color: #f4f4f4;
-      padding: 1.5em 2em;
-      text-align: center;
-    }
-    main {
-      max-width: 980px;
-      margin: auto;
-      padding: 2em;
-    }
-    h1, h2, h3 {
-      color: #003366;
-      margin-top: 1em;
-    }
-    .contact a {
-      margin: 0 1em;
-      text-decoration: none;
-      color: #007acc;
-    }
-    .section {
-      margin-bottom: 2.5em;
-    }
-    pre {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      background: #f9f9f9;
-      padding: 1em;
-      border-left: 3px solid #ccc;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    .subsection {
-      margin-bottom: 1.2em;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 700px) {
-      main {
-        padding: 1em;
-      }
-    }
-  </style>
+  <meta name="description" content="Ronak Kosamia – Android, SDV & Cloud-Native Engineering Leader | EB1-A Profile" />
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
+  <div id="particles-js"></div>
 
-<header>
-  <h1>Ronak Kosamia</h1>
-  <p>Principal Software Engineer • Android | SDV | Cloud-Native • EB1-A Candidate</p>
-  <div class="contact">
-    <a href="mailto:ronak@example.com">Email</a>
-    <a href="https://github.com/ronakkosamia" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/ronakkosamia" target="_blank">LinkedIn</a>
-    <a href="https://medium.com/@kosamiar/" target="_blank">Blog</a>
-  </div>
-</header>
+  <header>
+    <h1>Ronak Kosamia</h1>
+    <p>Principal Software Engineer • Android | SDV | Cloud-Native • EB1-A Applicant</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#certs">Certifications</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" download>Resume</a>
+      <button id="toggle-theme">🌓</button>
+    </nav>
+  </header>
 
-<main>
+  <main>
+    <!-- Sections (About, Skills, Experience, etc.) would go here -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form action="https://formsubmit.io/send/kosamiar@gmail.com" method="POST">
+        <input name="_redirect" type="hidden" value="https://ronakkosamia.github.io/thanks.html">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
-  <section class="section">
-    <h2>Professional Summary</h2>
-    <pre>
-Principal Software Engineer with 12+ years of experience leading mobile, cloud, and embedded software development.
-Proven ability to mentor teams, deliver large-scale software, and manage vendors. Expert in Android, cloud infra, CI/CD,
-observability, and multi-platform development. Strong strategist and hands-on engineer driving innovation and team growth.
-    </pre>
-  </section>
+  <footer>
+    <p>© 2025 Ronak Kosamia • Hosted on GitHub Pages</p>
+  </footer>
 
-  <section class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><b>Languages:</b> Java, Kotlin, Rust, C++, Swift, Python, JS, Bash</li>
-      <li><b>Mobile:</b> Android SDK, Jetpack Compose, KMP, Flutter, JNI, AIDL</li>
-      <li><b>Cloud/DevOps:</b> AWS, GCP, Firebase, Kubernetes, Terraform, Jenkins</li>
-      <li><b>Frameworks:</b> Hilt, Koin, RxJava, Coroutines, GraphQL, Retrofit</li>
-      <li><b>Observability:</b> Prometheus, Grafana, ELK, OpenTelemetry, Crashlytics</li>
-      <li><b>Tools:</b> Fastlane, Artifactory, SonarQube, GitLab CI/CD</li>
-      <li><b>Agile:</b> Scrum, Kanban, Jira, Confluence, Cross-functional leadership</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/ronak-kosamia/details/certifications/" target="_blank">See All on LinkedIn</a></li>
-      <li>Microsoft Certified: Azure Solutions Architect Expert</li>
-      <li>Certified SAFe® 5 Practitioner</li>
-      <li>Design for Six Sigma Black Belt</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Publications & Research</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/ronak-kosamia/details/publications/" target="_blank">
-        Full List of Publications (LinkedIn)</a></li>
-      <li><a href="https://www.researchgate.net/profile/Ronak-Kosamia-2" target="_blank">
-        ResearchGate Profile</a></li>
-      <li><a href="https://doi.org/10.55041/ISJEM02213" target="_blank">
-        Research Paper (Jan 2025) – DOI</a></li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Book Publication</h2>
-    <ul>
-      <li><a href="https://www.amazon.com/dp/B0DZ7ZJ9BM" target="_blank">Amazon</a></li>
-      <li><a href="https://books.google.com/books/about?id=4jNJEQAAQBAJ" target="_blank">Google Books</a></li>
-      <li><a href="https://www.bookwire.bowker.com/books/all?query=9798897661534" target="_blank">Bookwire</a></li>
-    </ul>
-    <p>
-      My book covers mobile systems, software-defined vehicles, and the convergence of cloud-native development for next-gen mobility.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>Blog & Thought Leadership</h2>
-    <p>
-      I regularly publish technical blogs focused on Android architecture, KMP, SDV systems, and mobile-cloud performance.
-    </p>
-    <p>
-      <a href="https://medium.com/@kosamiar/" target="_blank">Visit My Blog →</a>
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>Professional Experience</h2>
-
-    <div class="subsection">
-      <h3>Capital One | Principal Software Engineer</h3>
-      <p><i>Remote – Oct 2024 to Present</i></p>
-      <ul>
-        <li>Led development of the AtWork mobile platform: PeopleFinder, FixIt, Eats, Parking.</li>
-        <li>Modernized UI with Jetpack Compose, MotionLayout, GraphQL, and OpenID.</li>
-        <li>Reduced API latency 35% with Ktor + caching; improved CI/CD automation across pipelines.</li>
-        <li>Mentored engineers, drove Kotlin best practices, and led cross-functional alignment with enterprise security, HR, and infra teams.</li>
-      </ul>
-    </div>
-
-    <div class="subsection">
-      <h3>General Motors | Principal Software Engineer</h3>
-      <p><i>Roswell, GA – Jan 2023 to Sept 2024</i></p>
-      <ul>
-        <li>Architected MyBrand app for 20+ GM vehicles with modular SDV architecture.</li>
-        <li>Led KMP and Rust SDKs; integrated Firebase & AWS Lambda for real-time vehicle sync.</li>
-        <li>Refactored RxJava networking to Coroutines; adopted GraphQL and observability via Prometheus, Crashlytics.</li>
-        <li>Mentored a 10+ dev team, standardized review workflows, drove vendor tool evaluations.</li>
-      </ul>
-    </div>
-
-    <div class="subsection">
-      <h3>General Motors | Sr. Android Developer</h3>
-      <p><i>Warren, MI – Jun 2017 to Jan 2023</i></p>
-      <ul>
-        <li>Developed NLP-based infotainment and ARKit-powered parking guidance system.</li>
-        <li>Built hybrid apps (Ionic, Angular, Cordova) with native plugins for cross-platform deployments.</li>
-        <li>Integrated REST APIs and backend microservices for real-time updates and system integration.</li>
-      </ul>
-    </div>
-
-    <div class="subsection">
-      <h3>WMATA (WA Metro) | Sr. Mobile Developer</h3>
-      <p><i>Washington, DC – Dec 2015 to Jan 2017</i></p>
-      <ul>
-        <li>Led GIS-integrated Bus Stop Editor for live route data collection via ESRI mapping tools.</li>
-        <li>Built hybrid apps and Node.js backend with Angular, Cordova for cross-platform mobile teams.</li>
-      </ul>
-    </div>
-
-    <div class="subsection">
-      <h3>FoodCrave / FoodNearU | Sr. Mobile App Developer</h3>
-      <p><i>San Francisco, CA – Dec 2014 to Dec 2015</i></p>
-      <ul>
-        <li>Led food delivery app development using React Native + Redux for Android & iOS.</li>
-        <li>Integrated secure payment and real-time restaurant APIs with optimized state management.</li>
-      </ul>
-    </div>
-
-    <div class="subsection">
-      <h3>Polaris | J2EE Developer</h3>
-      <p><i>India – Aug 2010 to Jul 2013</i></p>
-      <ul>
-        <li>Built scalable ERP systems with Java EE, REST APIs, SQL optimization, and transaction management.</li>
-        <li>Improved query performance by 30%, and deployed backend across Apache Tomcat clusters.</li>
-      </ul>
-    </div>
-
-  </section>
-
-</main>
-
-<footer>
-  <p>&copy; 2025 Ronak Kosamia • Hosted on GitHub Pages</p>
-</footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
