@@ -1,17 +1,16 @@
-
 AOS.init({ duration: 800, once: true });
 
 particlesJS('particles-js', {
   particles: {
     number: { value: 60 },
-    color: { value: "#007acc" },
+    color: { value: "#3b82f6" },
     shape: { type: "circle" },
     opacity: { value: 0.5 },
     size: { value: 3 },
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#007acc",
+      color: "#3b82f6",
       opacity: 0.4,
       width: 1
     },
