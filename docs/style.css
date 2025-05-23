@@ -1,9 +1,11 @@
+
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #0f172a;
-  color: #f8fafc;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
   scroll-behavior: smooth;
+  line-height: 1.7;
 }
 #particles-js {
   position: fixed;
@@ -12,43 +14,50 @@ body {
   z-index: 0;
 }
 header, footer {
-  background: #000;
-  padding: 1.5em;
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 2em;
   text-align: center;
-  z-index: 2;
-  position: relative;
 }
 nav a {
-  margin: 0 0.7em;
+  margin: 0 1em;
   color: #f8fafc;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 main {
   position: relative;
   z-index: 2;
 }
 .section {
-  padding: 4em 2em;
+  padding: 5em 2em;
   text-align: center;
 }
-.about { background-color: #111827; }
-.experience { background-color: #1f2937; }
-.split-panel { background-color: #0f172a; }
+.about { background-color: #f8fafc; color: #1e293b; }
+.experience { background-color: #f1f5f9; color: #1e293b; }
+.split-panel { background-color: #fefce8; color: #1e293b; }
 
 .card {
   max-width: 960px;
   margin: auto;
   padding: 2em;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-align: left;
+}
+.card h2, .card h3 {
+  text-align: center;
+  color: #0f172a;
+}
+.card p, .card ul, .card form {
+  text-align: justify;
 }
 
 .logo-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2em;
   margin: 2em 0;
 }
@@ -57,7 +66,7 @@ main {
   height: 80px;
   object-fit: contain;
   cursor: pointer;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-radius: 6px;
   transition: transform 0.2s, border-color 0.3s;
 }
@@ -66,7 +75,7 @@ main {
 }
 .logo-row img.selected {
   border-color: #3b82f6;
-  background-color: rgba(59, 130, 246, 0.2);
+  background-color: rgba(59, 130, 246, 0.15);
 }
 
 .split-container {
@@ -84,20 +93,19 @@ form {
   gap: 1em;
 }
 input, textarea {
-  padding: 0.8em;
+  padding: 0.9em;
   font-size: 1em;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
 }
 button {
-  padding: 0.6em 1.2em;
+  padding: 0.7em 1.5em;
   background: #3b82f6;
   color: white;
   border: none;
   border-radius: 4px;
+  font-weight: bold;
 }
 footer {
-  color: #ccc;
   font-size: 0.9em;
-  padding: 2em 1em;
 }
