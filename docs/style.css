@@ -196,6 +196,29 @@ nav a:focus {
   color: #ffffff;
 }
 
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.libutton {
+  margin: 18px 0 18px 0; /* More vertical space */
+}
+header h1 {
+  margin-bottom: 0px;
+}
+.headline {
+  text-align: center;
+}
+nav#content {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
 
 
 
