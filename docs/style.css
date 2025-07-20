@@ -217,6 +217,10 @@ nav#content {
   justify-content: center;
   margin-top: 20px;
 }
+.header-content, header, main, footer, nav, .libutton {
+  position: relative;
+  z-index: 10; /* must be higher than particles */
+}
 
 
 
