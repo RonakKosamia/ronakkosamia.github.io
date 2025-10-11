@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificates | Ronak Kosamia</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { text-align:center; margin:0; background:#0f0f0f; color:#fff; }
+    header, footer { padding:20px; }
+    h2 { margin-top:60px; }
+    .slideshow {
+      display:flex; overflow-x:auto; scroll-behavior:smooth;
+      gap:20px; padding:20px; white-space:nowrap;
+    }
+    .slideshow img {
+      height:260px; border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.4);
+      transition:transform .3s;
+    }
+    .slideshow img:hover { transform:scale(1.05); }
+    .section { border-top:1px solid #333; margin-top:30px; }
+    nav a { margin:0 10px; color:#0A66C2; text-decoration:none; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Certificates</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">My Research</a>
+    <a href="certificate.html">Certificates</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section" id="editorial">
+    <h2>Editorial Board Member Certificates</h2>
+    <div class="slideshow">
+      <img src="certificates/editorial1.jpg" alt="Editorial Certificate 1" />
+      <img src="certificates/editorial2.jpg" alt="Editorial Certificate 2" />
+      <img src="certificates/editorial3.jpg" alt="Editorial Certificate 3" />
+    </div>
+  </section>
+
+  <section class="section" id="published">
+    <h2>Published Work Certificates</h2>
+    <div class="slideshow">
+      <img src="certificates/published1.jpg" alt="Published Certificate 1" />
+      <img src="certificates/published2.jpg" alt="Published Certificate 2" />
+      <img src="certificates/published3.jpg" alt="Published Certificate 3" />
+    </div>
+  </section>
+
+  <section class="section" id="peerreview">
+    <h2>Peer Review / Judging Certificates</h2>
+    <div class="slideshow">
+      <img src="certificates/judge1.jpg" alt="Judging Certificate 1" />
+      <img src="certificates/judge2.jpg" alt="Judging Certificate 2" />
+      <img src="certificates/judge3.jpg" alt="Judging Certificate 3" />
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Ronak Kosamia • Certificates Gallery</p>
+</footer>
+
+<script>
+// optional: auto-scroll each slideshow
+document.querySelectorAll('.slideshow').forEach(slide=>{
+  let scrollPos=0;
+  setInterval(()=>{
+    scrollPos+=320;
+    if(scrollPos>=slide.scrollWidth-slide.clientWidth) scrollPos=0;
+    slide.scrollTo({left:scrollPos, behavior:'smooth'});
+  },4000);
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="script.js"></script>
+
+</body>
+</html>
